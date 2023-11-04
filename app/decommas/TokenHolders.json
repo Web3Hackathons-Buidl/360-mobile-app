@@ -1,0 +1,21 @@
+{
+  "status": 200,
+  "result": [
+    {
+      "holder_address": "0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009",
+      "amount": "678012581800839",
+      "decimals": 6,
+      "actual_price": "1.001",
+      "chain_id": "1",
+      "chain_name": "mainnet"
+    },
+    {
+      "holder_address": "0x5C0b2E97109a6aee0F40D63B5d70F6e9DD137240",
+      "amount": "658247229778503",
+      "decimals": 6,
+      "actual_price": "1.001",
+      "chain_id": "1",
+      "chain_name": "mainnet"
+    }
+  ]
+}

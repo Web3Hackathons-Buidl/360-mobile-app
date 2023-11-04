@@ -1,44 +1,61 @@
-import React, { useEffect } from "react";
-import { Decommas, ChainName } from "@decommas/sdk";
+import React, { useEffect, useState } from "react";
+import { Decommas, ChainName } from "@decommas/sdk"; // Import ChainName
+import { processEnv } from "@next/env";
+import dotenv from "dotenv";
 
+dotenv.config();
 const API_KEY = "e176f1b01d4b4b212e45c3285aea71416c765768";
 const decommas = new Decommas(API_KEY);
 
-const DataFetching = () => {
-  const getNamespacesUseCases = async () => {
-    const getTokensParams = {
-      address: "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
-    };
+const DataFetcher = () => {
+  const ethereumAddress = "0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009";
 
-    const getTransactionDetailParams = {
-      chainName: ChainName.MAINNET,
-      txHash:
-        "0x1d13160c69bac11b359585f37ffe8ba421e9f775852ea25b5b3b1ffab1f217de",
-    };
-
-    const getNftParams = {
-      chainName: ChainName.MAINNET,
-      contractAddress: "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
-      tokenId: 1,
-    };
-
-    const tokens = await decommas.address.getTokens(getTokensParams);
-    console.log(tokens);
-
-    const transactionDetails = await decommas.tx.getDetail(
-      getTransactionDetailParams
-    );
-    console.log(transactionDetails);
-
-    const nftMetadata = await decommas.metadata.getNft(getNftParams);
-    console.log(nftMetadata);
+  const getVitalikERC20Balances = async (address) => {
+    try {
+      const balances = await decommas.address.getTokens({ address });
+      console.log(balances);
+    } catch (error) {
+      console.error(error);
+      // Handle the error as needed
+    }
   };
 
+  const fetchData = async () => {
+    try {
+      const address = "0x5C0b2E97109a6aee0F40D63B5d70F6e9DD137240";
+      const tokens = await decommas.address.getTokens({ address });
+      return tokens;
+    } catch (error) {
+      console.error("Error fetching Decommas data:", error);
+      return [];
+    }
+  };
+
+  const [decommasData, setDecommasData] = useState([]);
+
   useEffect(() => {
-    getNamespacesUseCases();
+    fetchData().then((tokens) => {
+      setDecommasData(tokens);
+    });
   }, []);
 
-  return <div>Fetching data...</div>;
+  return (
+    <div>
+      <div>Fetching Data...</div>
+      {decommasData.length > 0 ? (
+        decommasData.map((token, index) => (
+          <div key={index}>
+            {/* Display the DeCommas data here */}
+            <p>Name: {token.name}</p>
+            <p>Symbol: {token.symbol}</p>
+            {/* Add more fields as needed */}
+          </div>
+        ))
+      ) : (
+        <div>No Data Available.</div>
+      )}
+    </div>
+  );
 };
 
-export default DataFetching;
+export default DataFetcher;

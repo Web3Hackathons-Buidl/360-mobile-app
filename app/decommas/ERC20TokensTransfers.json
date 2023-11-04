@@ -1,0 +1,23 @@
+{
+  "status": 200,
+  "result": [
+    {
+      "chain_name": "bsc",
+      "chain_id": 56,
+      "block_number": 32679242,
+      "block_timestamp": 1697536654,
+      "log_index": 266,
+      "from_address": "0xff053f52cbec2b4e3dce13d98f9f32c2889c05a6",
+      "to_address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
+      "token_address": "0x281af7ed4f57e9905d568196d3cdba2b2852dfbc",
+      "amount": "175000000000000000000",
+      "transaction_hash": "0x429b5cd17e7669b23b829a53ca60293ece24d352fcb46684d65e3dd1e2f90baf",
+      "method": "batchTransfer",
+      "method_hash": "0xbb0a64b6",
+      "fee": "10022304000000000",
+      "gas_price": "3000000000",
+      "gas_used": "3340768",
+      "block_base_fee_per_gas": "0"
+    }
+  ]
+}

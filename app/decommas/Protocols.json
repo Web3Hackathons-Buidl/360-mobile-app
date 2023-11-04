@@ -1,0 +1,30 @@
+{
+  "count": 2,
+  "status": 200,
+  "result": [
+    {
+      "chain_name": "mainnet",
+      "chain_id": 1,
+      "protocol_id": "aave_v2",
+      "protocol_name": "Aave V2",
+      "protocol_logo": null,
+      "position": {
+        "asset_usd_value": "2.04045871341",
+        "debt_usd_value": "0",
+        "net_usd_value": "2.04045871341"
+      }
+    },
+    {
+      "chain_name": "mainnet",
+      "chain_id": 1,
+      "protocol_id": "aave_v3",
+      "protocol_name": "Aave V3",
+      "protocol_logo": null,
+      "position": {
+        "asset_usd_value": "1.0090216719749998",
+        "debt_usd_value": "0",
+        "net_usd_value": "1.0090216719749998"
+      }
+    }
+  ]
+}
