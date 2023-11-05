@@ -1,6 +1,7 @@
 import NextCors from "nextjs-cors";
 
 export async function GET(request) {
+  console.log(GET);
   return new Response("Hello, Next.js!", {
     status: 200,
     headers: {
@@ -10,3 +11,5 @@ export async function GET(request) {
     },
   });
 }
+
+// export default routeModule;

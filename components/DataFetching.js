@@ -4,6 +4,7 @@ import ajax from "ajax";
 import { Decommas } from "@decommas/sdk";
 import { processEnv } from "@next/env";
 import dotenv from "dotenv";
+import handler from "app/api/whoami.js";
 
 const cors = require("cors"); // Import the cors package
 
@@ -13,6 +14,8 @@ const decommas = new Decommas(API_KEY);
 
 const DataFetcher = () => {
   const [decommasData, setDecommasData] = useState([]);
+  console.log(DataFetcher);
+  console.log(decommasData);
 
   useEffect(() => {
     const fetchData = async () => {
