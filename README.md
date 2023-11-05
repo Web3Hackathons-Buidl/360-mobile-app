@@ -3,6 +3,7 @@ Linea Hackathon Project This is a simple Hardhat template that provides a starti
 🔑 Public key: 0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009 
 😃 Contract IController address: 0x86777D9b8F27B822df90B6c2787a12ccc99B59db
 😃 Contract IControllerExtendable address: 0x6578C67B97E4F431c07cAb4C91176ECf5125d2d6
+😃 Contract ILockManager address:0x1C3a02fC79b8C0C220fECf6D6409dF514097D70c
 
 ## Getting Started
 
