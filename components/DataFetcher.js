@@ -1,34 +1,34 @@
-import React, { useEffect, useState } from 'react'
-import { Decommas } from '@decommas/sdk'
-import dotenv from 'dotenv'
-import { processEnv } from '@next/env'
+import React, { useEffect, useState } from "react";
+import { Decommas } from "@decommas/sdk";
+import dotenv from "dotenv";
+import { processEnv } from "@next/env";
 
-dotenv.config()
-const API_KEY = 'e176f1b01d4b4b212e45c3285aea71416c765768'
-const decommas = new Decommas(API_KEY)
+dotenv.config();
+const API_KEY = "e176f1b01d4b4b212e45c3285aea71416c765768";
+const decommas = new Decommas(API_KEY);
 
 const DataFetcher = () => {
-  const [decommasData, setDecommasData] = useState()
+  const [decommasData, setDecommasData] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const address = '0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009'
-        const apiKey = 'e176f1b01d4b4b212e45c3285aea71416c765768'
+        const address = "0x5C0b2E97109a6aee0F40D63B5d70F6e9DD137240";
+        const apiKey = "e176f1b01d4b4b212e45c3285aea71416c765768";
 
-        const tokens = await decommas.address.getTokens({ address }, apiKey)
-        console.log('Tokens:', tokens)
+        const tokens = await decommas.address.getTokens({ address }, apiKey);
+        console.log("Tokens:", tokens);
 
-        setDecommasData(tokens)
+        setDecommasData(tokens);
       } catch (error) {
-        console.error('Error fetching Decommas data:', error)
+        console.error("Error fetching Decommas data:", error);
       }
-    }
+    };
 
-    fetchData()
-  }, [])
+    fetchData();
+  }, []);
 
-  console.log('DATA', decommasData)
+  console.log("DATA", decommasData);
 
   return (
     <div>
@@ -47,7 +47,7 @@ const DataFetcher = () => {
         <p>Fetching Data...</p>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default DataFetcher
+export default DataFetcher;

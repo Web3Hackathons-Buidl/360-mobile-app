@@ -2,10 +2,10 @@
 import { useEffect } from "react";
 import Wallet from "/components/Wallet.jsx";
 import { useListen } from "/hooks/useListen.jsx";
-import { useMetamask } from "/hooks/useMetamask.jsx";
+// import { useMetamask } from "/hooks/useMetamask.jsx";
 
 const Home = () => {
-  const { dispatch } = useMetamask();
+  //   const { dispatch } = useMetamask();
   const listen = useListen();
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Home = () => {
         : // backup if local storage is empty
           { wallet: null, balance: null };
 
-      dispatch({ type: "pageLoaded", isMetamaskInstalled, wallet, balance });
+      //   dispatch({ type: "pageLoaded", isMetamaskInstalled, wallet, balance });
     }
   }, []);
 
