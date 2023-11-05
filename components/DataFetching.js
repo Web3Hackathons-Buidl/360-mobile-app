@@ -1,51 +1,45 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import ajax from "ajax";
-import { Decommas } from "@decommas/sdk";
-import { processEnv } from "@next/env";
-import dotenv from "dotenv";
+import React, { useEffect, useState } from 'react'
+import { Decommas } from '@decommas/sdk'
+import dotenv from 'dotenv'
+import { processEnv } from '@next/env'
 
-const cors = require("cors"); // Import the cors package
-
-dotenv.config();
-const API_KEY = "e176f1b01d4b4b212e45c3285aea71416c765768";
-const decommas = new Decommas(API_KEY);
+dotenv.config()
+const API_KEY = 'e176f1b01d4b4b212e45c3285aea71416c765768'
+const decommas = new Decommas(API_KEY)
 
 const DataFetcher = () => {
-  const [decommasData, setDecommasData] = useState([]);
+  const [decommasData, setDecommasData] = useState()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const balances = await decommas.address.getTokens({
-          address: ethereumAddress,
-        });
-        console.log(balances);
-        const address = "0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009";
-        console.log(address);
-        const apiKey = process.env.DECOMMAS_API_KEY;
-        const tokens = await decommas.address.getTokens({ address }, apiKey);
-        console.log(tokens);
-        // return tokens;
-        setDecommasData(tokens);
+        const address = '0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009'
+        const apiKey = 'e176f1b01d4b4b212e45c3285aea71416c765768'
+
+        const tokens = await decommas.address.getTokens({ address }, apiKey)
+        console.log('Tokens:', tokens)
+
+        setDecommasData(tokens)
       } catch (error) {
-        console.error("Error fetching Decommas data:", error);
-        // return [];
+        console.error('Error fetching Decommas data:', error)
       }
-    };
-    const ethereumAddress = "0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009";
-    fetchData();
-  }, []);
+    }
+
+    fetchData()
+  }, [])
+
+  console.log('DATA', decommasData)
 
   return (
     <div>
-      {decommasData.length > 0 ? (
-        decommasData.map((token, index) => (
+      {decommasData?.result.length > 0 ? (
+        decommasData?.result.map((token, index) => (
           <div key={index}>
             {/* Display the DeCommas data here */}
             <p>Name: {token.name}</p>
             <p>Symbol: {token.symbol}</p>
             <p>Actual_Price: {token.actual_price}</p>
+            <br />
             {/* Add more fields as needed */}
           </div>
         ))
@@ -53,7 +47,7 @@ const DataFetcher = () => {
         <p>Fetching Data...</p>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default DataFetcher;
+export default DataFetcher
