@@ -1,6 +1,6 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import ajax from "ajax";
 import { Decommas } from "@decommas/sdk";
 import { processEnv } from "@next/env";
 import dotenv from "dotenv";
@@ -22,6 +22,7 @@ const DataFetcher = () => {
         });
         console.log(balances);
         const address = "0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009";
+        console.log(address);
         const apiKey = process.env.DECOMMAS_API_KEY;
         const tokens = await decommas.address.getTokens({ address }, apiKey);
         console.log(tokens);
@@ -44,11 +45,12 @@ const DataFetcher = () => {
             {/* Display the DeCommas data here */}
             <p>Name: {token.name}</p>
             <p>Symbol: {token.symbol}</p>
+            <p>Actual_Price: {token.actual_price}</p>
             {/* Add more fields as needed */}
           </div>
         ))
       ) : (
-        <p>No data available.</p>
+        <p>Fetching Data...</p>
       )}
     </div>
   );

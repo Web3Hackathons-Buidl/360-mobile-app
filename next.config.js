@@ -2,10 +2,16 @@
 const nextConfig = {};
 
 module.exports = {
-  webpack5: true,
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://api.example.com/:path*",
+      },
+    ];
+  },
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
-
     return config;
   },
 };
