@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "result": [
+    {
+      "holder_address": "0x24e267d13314dd742d86c3321e727b801ed99542",
+      "amount": "104",
+      "chain_id": 1,
+      "chain_name": "mainnet"
+    },
+    {
+      "holder_address": "0xb6c1078f6fd3e682f3c69f8f6e616476765749a7",
+      "amount": "63",
+      "chain_id": 1,
+      "chain_name": "mainnet"
+    },
+    {
+      "holder_address": "0x6c415673c79b31aca38669ad9fb5cdb7012c0e8e",
+      "amount": "52",
+      "chain_id": 1,
+      "chain_name": "mainnet"
+    },
+    {
+      "holder_address": "0x83d6474e18215bfe7a101e37e9e2a746570b6834",
+      "amount": "50",
+      "chain_id": 1,
+      "chain_name": "mainnet"
+    },
+    {
+      "holder_address": "0xe52cec0e90115abeb3304baa36bc2655731f7934",
+      "amount": "48",
+      "chain_id": 1,
+      "chain_name": "mainnet"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "count": 2,
+    "status": 200,
+    "result": [
+      {
+        "chain_name": "mainnet",
+        "chain_id": 1,
+        "address": "0x566957ef80f9fd5526cd2bef8be67035c0b81130",
+        "name": "USD Coin (PoS)",
+        "decimals": 6,
+        "symbol": "USDC",
+        "logo_url": "https://assets.coingecko.com/coins/images/22945/large/USDCpo_wh_small.png?1644223406",
+        "actual_price": "0.999029",
+        "is_verified": true,
+        "is_stable": false,
+        "is_protocol_token": false
+      },
+      {
+        "chain_name": "mainnet",
+        "chain_id": 1,
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "name": "USD Coin",
+        "decimals": 6,
+        "symbol": "USDC",
+        "logo_url": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png?1547042389",
+        "actual_price": "1",
+        "is_verified": true,
+        "is_stable": true,
+        "is_protocol_token": false
+      }
+    ]
+  }

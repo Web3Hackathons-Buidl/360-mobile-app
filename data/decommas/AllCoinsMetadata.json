@@ -1,0 +1,24 @@
+{
+  "count": 2,
+  "status": 200,
+  "result": [
+    {
+      "chain_name": "arbitrum",
+      "chain_id": 42161,
+      "name": "ethereum",
+      "symbol": "ETH",
+      "logo_url": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+      "decimals": 18,
+      "actual_price": "1847.07"
+    },
+    {
+      "chain_name": "polygon",
+      "chain_id": 137,
+      "name": "matic",
+      "symbol": "MATIC",
+      "logo_url": "https://assets.coingecko.com/coins/images/4713/large/matic-token-icon.png?1624446912",
+      "decimals": 18,
+      "actual_price": "0.680011"
+    }
+  ]
+}

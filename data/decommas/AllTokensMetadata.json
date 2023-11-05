@@ -1,0 +1,32 @@
+{
+  "count": 2,
+  "status": 200,
+  "result": [
+    {
+      "chain_name": "mainnet",
+      "chain_id": 1,
+      "address": "0x0000000000004946c0e9f43f4dee607b0ef1fa1c",
+      "name": "Chi Gastoken by 1inch",
+      "decimals": 0,
+      "symbol": "CHI",
+      "logo_url": "https://assets.coingecko.com/coins/images/11583/large/chi.png?1591331659",
+      "actual_price": "0.04260938",
+      "is_verified": true,
+      "is_stable": false,
+      "is_protocol_token": false
+    },
+    {
+      "chain_name": "mainnet",
+      "chain_id": 1,
+      "address": "0x000000000000d0151e748d25b766e77efe2a6c83",
+      "name": "XDEFI Governance Token",
+      "decimals": 18,
+      "symbol": "XDEX",
+      "logo_url": "https://assets.coingecko.com/coins/images/14485/large/logo.png?1616472896",
+      "actual_price": "0.01553277",
+      "is_verified": true,
+      "is_stable": false,
+      "is_protocol_token": false
+    }
+  ]
+}

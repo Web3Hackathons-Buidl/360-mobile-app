@@ -1,0 +1,26 @@
+{
+    "count": 2,
+    "status": 200,
+    "result": [
+      {
+        "chain_name": "mainnet",
+        "chain_id": 1,
+        "name": "ethereum",
+        "symbol": "ETH",
+        "logo_url": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+        "decimals": 18,
+        "amount": "2631431841986023403",
+        "actual_price": "1800"
+      },
+      {
+        "chain_name": "optimism",
+        "chain_id": 10,
+        "name": "ethereum",
+        "symbol": "ETH",
+        "logo_url": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+        "decimals": 18,
+        "amount": "26074769918530822",
+        "actual_price": "1800"
+      }
+    ]
+  }

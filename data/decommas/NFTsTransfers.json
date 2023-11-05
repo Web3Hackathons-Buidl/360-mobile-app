@@ -1,0 +1,25 @@
+{
+  "status": 200,
+  "result": [
+    {
+      "chain_name": "gnosis",
+      "chain_id": 100,
+      "block_number": 30502598,
+      "block_timestamp": 1697547090,
+      "log_index": 1545,
+      "from_address": "0x0000000000000000000000000000000000000000",
+      "to_address": "0x7bfee91193d9df2ac0bfe90191d40f23c773c060",
+      "contract_address": "0xc057c02bf41185dce4b962ea12203ccad452242d",
+      "token_id": "0",
+      "contract_type": "ERC-1155",
+      "amount": "1",
+      "transaction_hash": "0xcdfd8374e6c545860edbcd13471ec8d06b54bba1cdfa1e91e8474700fa1bd487",
+      "method": null,
+      "method_hash": "0x7f4d683a",
+      "fee": "24736112759249068",
+      "gas_price": "2564032391",
+      "gas_used": "9647348",
+      "block_base_fee_per_gas": "25"
+    }
+  ]
+}

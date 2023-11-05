@@ -1,18 +1,12 @@
-async function getData() {
-    const res = await fetch('https://api.example.com/...')
-    // The return value is *not* serialized
-    // You can return Date, Map, Set, etc.
-   
-    if (!res.ok) {
-      // This will activate the closest `error.js` Error Boundary
-      throw new Error('Failed to fetch data')
-    }
-   
-    return res.json()
-  }
-   
-  export default async function Page() {
-    const data = await getData()
-   
-    return <main></main>
-  }
+import NextCors from "nextjs-cors";
+
+export async function GET(request) {
+  return new Response("Hello, Next.js!", {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    },
+  });
+}

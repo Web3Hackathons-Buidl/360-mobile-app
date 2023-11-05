@@ -1,0 +1,22 @@
+{
+    "count": 2,
+    "status": 200,
+    "result": [
+      {
+        "chain_name": "mainnet",
+        "chain_id": 1,
+        "contract_address": "0x011c77fa577c500deedad364b8af9e8540b808c0",
+        "token_id": "10868",
+        "amount": 1,
+        "contract_type": "ERC-1155"
+      },
+      {
+        "chain_name": "mainnet",
+        "chain_id": 1,
+        "contract_address": "0x011c77fa577c500deedad364b8af9e8540b808c0",
+        "token_id": "11207",
+        "amount": 1,
+        "contract_type": "ERC-1155"
+      }
+    ]
+  }

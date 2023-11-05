@@ -10,6 +10,7 @@ const LiveStock = () => {
     <MainContainer marginTop={"main"}>
       <Header title={"live stock 📊"} />
       <LiveStockHero />
+
       <LiveStockMain />
       <FooterNav />
     </MainContainer>
