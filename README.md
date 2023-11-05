@@ -1,4 +1,8 @@
 # 360 Mobile App
+Linea Hackathon Project This is a simple Hardhat template that provides a starting point for developing smart contract applications on the Linea blockchain. 
+🔑 Public key: 0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009 
+😃 Contract IController address: 0x86777D9b8F27B822df90B6c2787a12ccc99B59db
+😃 Contract IControllerExtendable address: 0x6578C67B97E4F431c07cAb4C91176ECf5125d2d6
 
 ## Getting Started
 
