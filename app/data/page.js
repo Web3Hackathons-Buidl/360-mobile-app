@@ -1,5 +1,5 @@
 // "use client";
-import DataFetching from "@/components/DataFetching";
+import DataFetching from "@/components/DataFetcher";
 import handler from "../api/whoami";
 
 export default async function DecommasData() {
