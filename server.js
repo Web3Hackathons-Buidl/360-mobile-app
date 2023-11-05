@@ -14,6 +14,7 @@ app.get("/api/tokens", async (req, res) => {
   try {
     const response = await fetch(
       "https://datalayer.decommas.net/datalayer/api/v1/tokens/0x81D9069957Bfbd6fb29C3b0686Ce78397FF3E009/api-key=e176f1b01d4b4b212e45c3285aea71416c765768"
+      console.log(express.response)
     );
     const data = await response.json();
     res.json(data);
