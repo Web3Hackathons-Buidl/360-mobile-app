@@ -1,8 +1,12 @@
 const express = require("express");
 const fetch = require("node-fetch");
+const cors = require("cors"); // Import the cors package
+const DataFetching = require("./components/DataFetching"); // Assuming your DataFetching component is in the same directory
 
 const app = express();
-const port = 3001;
+const port = 3000;
+
+app.use(cors());
 
 app.use(express.json());
 
